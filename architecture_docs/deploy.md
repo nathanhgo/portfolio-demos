@@ -29,7 +29,13 @@ Repositório no GitHub (hoje é local) e conta Cloudflare. Nada de build: o site
 - [ ] testar em rede lenta (aba Network em 3G simulado)
 - [ ] nenhum erro no console
 
-## Numeros do plano gratuito (para conferência)
+## Números do plano gratuito (verificados na documentação, 27/09/2026)
 
-- Banda ilimitada, 500 builds/mês — publicar à mão já resolve o volume deste projeto.
-- Cada projeto aceita 100 domínios personalizados no plano gratuito.
+- **Requisições a arquivo estático: grátis e ilimitadas** (só passa a contar quando invoca Function).
+- 500 builds/mês, 1 build por vez, timeout de 20 min por build.
+- 100 domínios personalizados por projeto · 100 projetos por conta.
+- 20.000 arquivos por site · 25 MiB por arquivo.
+- Projetos novos: a Cloudflare limita a criação nos primeiros 48 h de conta nova (depois libera).
+- Nada na documentação restringe uso comercial no plano gratuito (diferente do Vercel Hobby, que é
+  explicitamente "non-commercial, personal use only").
+- Function (para um formulário, por exemplo) consome a cota do Workers Free: 100.000 requisições/dia.
