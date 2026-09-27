@@ -1,0 +1,10 @@
+/* Estilo específico desta demo. O que é comum a todas vive em ../../assets/base.css.
+   Aqui só entram a cor do negócio e ajustes de composição (ver architecture_docs/visual.md 2.2). */
+
+/* TROCAR: cor tirada da fachada/placa do negócio (uma cor, não duas) */
+body { --accent: #8a4b1f; }
+
+.topo { padding: var(--sec) 0 0; }
+.topo h1 { margin-bottom: .25em; }
+.acoes { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+.section h2 { margin-bottom: .35em; }

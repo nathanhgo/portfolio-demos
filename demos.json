@@ -1,0 +1,15 @@
+{
+  "atualizado": "2026-09-27",
+  "nota": "Registro único das demonstrações. Edite aqui e rode `node scripts/build-home.mjs`.",
+  "demos": [
+    {
+      "slug": "_template",
+      "nome": "Modelo de demonstração",
+      "segmento": "referência interna",
+      "bairro": "",
+      "status": "modelo",
+      "link": "./demos/_template/",
+      "observacao": "Dados fictícios. Copie esta pasta para criar uma demo nova."
+    }
+  ]
+}

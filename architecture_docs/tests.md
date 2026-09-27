@@ -1,0 +1,34 @@
+# Testes — Demos
+
+## O que significa "pronto" aqui
+
+Uma demo está pronta quando os três comandos abaixo passam e a página foi vista no celular:
+
+```bash
+node scripts/check.mjs            # registro × arquivos, noindex, faixa, links
+node scripts/build-home.mjs       # gera index.html sem erro
+```
+
+Mais a checagem manual obrigatória (emulador de celular do navegador):
+
+- [ ] a página abre em menos de 3 s em rede lenta simulada
+- [ ] o botão de WhatsApp abre o app com a mensagem escrita
+- [ ] telefone, endereço e horário estão corretos
+- [ ] nenhum erro no console do navegador
+- [ ] textos sem placeholder esquecido (`TROCAR`, `EXEMPLO`, `lorem`)
+
+## Estratégia
+
+- **Verificação estrutural automatizada** (`scripts/check.mjs`): garante que todo item de `demos.json`
+  tem pasta e `index.html`, que nenhuma demo ficou sem `noindex`, que a faixa de demonstração existe e
+  que nenhum link interno aponta para arquivo inexistente. Esse é o teste que pega o erro mais comum
+  (adicionar a demo no registro e esquecer a pasta, ou o contrário).
+- **Sem framework de teste**: o projeto não tem dependências e não justifica um runner. Se crescer a
+  ponto de ter lógica em JS próprio, aí sim entra `node --test`.
+- **O que fica fora da automação**: aparência e texto. Essas são revisadas com o checklist acima,
+  porque é justamente o que o dono do negócio vai olhar.
+
+## Riscos conhecidos
+
+- `check.mjs` não consegue validar contraste de cor nem toque mínimo — isso é revisão visual.
+- Nada aqui verifica HTTPS, domínio ou cabeçalhos: isso é do `deploy.md`.
