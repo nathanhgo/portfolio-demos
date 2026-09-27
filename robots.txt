@@ -1,0 +1,4 @@
+# Este site guarda páginas de demonstração feitas para comércios.
+# Nada aqui deve aparecer em busca: toda página tem noindex e o site inteiro fica fora dos índices.
+User-agent: *
+Disallow: /

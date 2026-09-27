@@ -26,7 +26,7 @@ h1 { font-size: clamp(2.5rem, 12vw, 4.75rem); line-height: .92; }
 .topo-site nav { display: flex; flex-wrap: wrap; gap: .5rem 1rem; font-family: var(--font-mono); font-size: .78rem; }
 .topo-site nav a { text-decoration: none; color: var(--ink-soft); white-space: nowrap; }
 
-.hero { padding: clamp(2rem,6vw,3.5rem) 0 0; }
+.hero { padding-block: clamp(2rem,6vw,3.5rem) 0; }
 .hero-grid { display: grid; gap: 1.5rem; }
 @media (min-width: 48rem) { .hero-grid { grid-template-columns: 1.1fr .9fr; align-items: center; } }
 .hero img { border: 1px solid var(--rule); }
@@ -47,7 +47,7 @@ h1 { font-size: clamp(2.5rem, 12vw, 4.75rem); line-height: .92; }
 .seletor button[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
 .seletor .aviso-js { font-size: .8rem; color: var(--ink-soft); align-self: center; }
 
-.loja { padding: var(--sec) 0; border-top: 1px solid var(--rule); }
+.loja { padding-block: var(--sec); border-top: 1px solid var(--rule); }
 .loja[hidden] { display: none; }
 .loja-grid { display: grid; gap: 1.5rem; }
 @media (min-width: 48rem) { .loja-grid { grid-template-columns: 1fr .85fr; align-items: start; } }

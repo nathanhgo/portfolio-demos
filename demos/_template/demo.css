@@ -4,7 +4,7 @@
 /* TROCAR: cor tirada da fachada/placa do negócio (uma cor, não duas) */
 body { --accent: #8a4b1f; }
 
-.topo { padding: var(--sec) 0 0; }
+.topo { padding-block: var(--sec) 0; }
 .topo h1 { margin-bottom: .25em; }
 .acoes { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
 .section h2 { margin-bottom: .35em; }

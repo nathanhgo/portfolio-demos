@@ -43,3 +43,19 @@ Mais a checagem manual obrigatória (emulador de celular do navegador):
 
 - `check.mjs` não consegue validar contraste de cor nem toque mínimo — isso é revisão visual.
 - Nada aqui verifica HTTPS, domínio ou cabeçalhos: isso é do `deploy.md`.
+
+
+## Armadilha: `.section` e `.hero` apagam o respiro lateral do `.wrap`
+`.wrap` define `padding: 0 clamp(...)`. Como `.hero` e `.section` são declarações de `padding`
+(todas as laterais) e vêm depois no CSS, elas zeravam o padding horizontal das seções que
+usam `class="section wrap"` — no celular o texto ficava colado na borda do aparelho.
+Regra: nesses blocos usar sempre `padding-block`, nunca `padding`, para não competir com o `.wrap`.
+Verificado em 390/375/320 px: `scrollWidth - clientWidth = 0` e `padding-left` de 20,28 px.
+
+## Como medir de verdade o que o cliente vê no celular
+Emular aparelho pelo Chrome DevTools Protocol numa aba real (não só estreitar a janela):
+`Emulation.setDeviceMetricsOverride` com `width=390, height=844, deviceScaleFactor=2, mobile=True`,
+`Network.setCacheDisabled` (sem isso o CSS antigo continua no ar e o teste mente) e depois ler
+`documentElement.scrollWidth - clientWidth` e `getComputedStyle(el).paddingLeft`.
+Estreitar a janela do headless com `--window-size` **não** emula celular: o layout pode sair
+maior que o print e dar a impressão de texto cortado.

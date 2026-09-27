@@ -16,22 +16,23 @@
 }
 
 h1, h2 { text-transform: uppercase; letter-spacing: .01em; }
-h1 { font-size: clamp(2.6rem, 11vw, 4.5rem); line-height: .95; }
+h1 { font-size: clamp(2.3rem, 9vw, 4.25rem); line-height: .95; }
 
 .faixa { background: var(--accent); color: #fff; padding: .55rem 1.25rem; text-align: center;
   font-family: var(--font-mono); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; }
 .faixa strong { color: var(--marca-amarelo); }
 
-.hero { padding: clamp(1.75rem,5vw,3rem) 0 0; }
+.hero { padding-block: clamp(1.75rem,5vw,3rem) 0; }
+.hero img { width: 100%; }
 .hero-grid { display: grid; gap: 1.75rem; }
 .hero img { border: 1px solid var(--rule); }
 @media (min-width: 46rem) { .hero-grid { grid-template-columns: 1.05fr .95fr; align-items: center; } }
 
 .servicos { list-style: none; margin: 0; padding: 0; }
-.servicos li { display: grid; grid-template-columns: 1.1fr 1fr; gap: .25rem 1rem;
+.servicos li { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: .25rem 1rem;
   padding: .85rem 0; border-bottom: 1px solid var(--rule); align-items: baseline; }
-.servicos .nome { font-weight: 600; }
-.servicos .preco { text-align: right; font-family: var(--font-mono); font-size: .9rem; color: var(--ink-soft); }
+.servicos .nome { font-weight: 600; overflow-wrap: anywhere; }
+.servicos .preco { overflow-wrap: anywhere; text-align: right; font-family: var(--font-mono); font-size: .9rem; color: var(--ink-soft); }
 
 .destaque { background: var(--paper-2); border: 1px solid var(--rule); border-left: 0; padding: 1.1rem 1.25rem; }
 .destaque .preco-forte { font-family: var(--font-title); font-size: 2.4rem; line-height: 1; color: var(--accent); }

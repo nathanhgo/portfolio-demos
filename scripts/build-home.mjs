@@ -21,7 +21,7 @@ const linhas = (cfg.demos ?? []).map((d) => {
         <div class="item-interno">
           <span class="item-nome">${escapar(d.nome)}</span>
           <span class="item-status">${status}</span>
-          <span class="item-meta">${escapar(meta)} — ${escapar(d.observacao ?? "")} <a href="${escapar(d.link)}">abrir modelo</a></span>
+          <span class="item-meta">${escapar(meta)} · ${escapar(d.observacao ?? "")} <a href="${escapar(d.link)}">abrir modelo</a></span>
         </div>
       </li>`;
   }
