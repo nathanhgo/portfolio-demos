@@ -25,6 +25,11 @@ Mais a checagem manual obrigatória (emulador de celular do navegador):
   (adicionar a demo no registro e esquecer a pasta, ou o contrário).
 - **Sem framework de teste**: o projeto não tem dependências e não justifica um runner. Se crescer a
   ponto de ter lógica em JS próprio, aí sim entra `node --test`.
+- **Overflow horizontal (o erro que passou na primeira revisão)**: print de tela headless **não**
+  prova que a página cabe no celular — o Chromium fotografa o layout numa largura maior e recorta,
+  o que parece texto cortado sem haver rolagem. A medição que vale é `scrollWidth` contra `innerWidth`
+  em viewport de 390/375/320 px, dentro de um iframe local (`demos/probe.html` era o medidor, já
+  removido; recriar quando precisar). Resultado atual: `overflow=nao` nas três larguras, nas duas páginas.
 - **O que fica fora da automação**: aparência e texto. Essas são revisadas com o checklist acima,
   porque é justamente o que o dono do negócio vai olhar.
 
