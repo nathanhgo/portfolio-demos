@@ -17,11 +17,11 @@ Status é marcado apenas aqui: `[ ]` não começou · `[~]` em andamento · `[x]
 
 Depende de o Nathan definir quais negócios serão abordados primeiro.
 
-- [ ] Demo 1 (a definir)
-- [ ] Demo 2 (a definir)
-- [ ] Demo 3 (a definir)
-- [ ] Home atualizada com as demos (`demos.json` + build)
-- [ ] Verificação com `node scripts/check.mjs`
+- [x] Demo 1 — Kareca Pneus (oficina, Jardim das Indústrias)
+- [x] Demo 2 — Comercial Cobra (material de construção, Jardim Paraíso)
+- [x] Demo 3 — Stylus Moda (moda, 4 lojas na Cidade Salvador, com troca de unidade)
+- [x] Home atualizada com as demos (`demos.json` + build)
+- [x] Verificação com `node scripts/check.mjs`
 
 ## Fase 2 — Material de venda
 

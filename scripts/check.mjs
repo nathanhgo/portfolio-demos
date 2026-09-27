@@ -40,7 +40,12 @@ for (const d of demos) {
   if (!/class="demo-banner"|demo-banner/.test(html)) problemas.push(`${d.slug}: falta a faixa de demonstração (.demo-banner)`);
   if (!/lang="pt-BR"/.test(html)) problemas.push(`${d.slug}: falta lang="pt-BR"`);
   if (!/<title>[^<]{10,}<\/title>/.test(html)) problemas.push(`${d.slug}: título ausente ou genérico`);
-  if (d.status !== "modelo" && /TROCAR:/.test(html)) problemas.push(`${d.slug}: ainda contém marcações TROCAR: (dados fictícios não trocados)`);
+  const VALIDOS = ["modelo", "pendente", "pronta"];
+  if (!VALIDOS.includes(d.status)) problemas.push(`${d.slug}: status inválido "${d.status}" (use: ${VALIDOS.join(", ")})`);
+  const pendentes = (html.match(/TROCAR:/g) || []).length;
+  if (d.status === "pronta" && pendentes) problemas.push(`${d.slug}: marcado como pronto mas ainda tem ${pendentes} marcação(ões) TROCAR:`);
+  if (d.status === "pendente" && !pendentes) problemas.push(`${d.slug}: marcado como pendente mas não há nenhuma marcação TROCAR: (nada a confirmar)`);
+  if (pendentes) ok.push(`${d.slug}: ${pendentes} ponto(s) aguardando o dono confirmar`);
   ok.push(`${d.slug}: estrutura verificada`);
 }
 

@@ -17,6 +17,12 @@ Mais a checagem manual obrigatória (emulador de celular do navegador):
 - [ ] nenhum erro no console do navegador
 - [ ] textos sem placeholder esquecido (`TROCAR`, `EXEMPLO`, `lorem`)
 
+## Status de cada demo
+
+`modelo` (referência interna) · `pendente` (demo feita, com pontos marcados `TROCAR:` esperando o dono)
+· `pronta` (nada pendente — o verificador reprova se ainda houver `TROCAR:`). O status vive em
+`demos.json` e aparece na home.
+
 ## Estratégia
 
 - **Verificação estrutural automatizada** (`scripts/check.mjs`): garante que todo item de `demos.json`

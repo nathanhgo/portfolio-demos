@@ -31,6 +31,24 @@ O plano gratuito permite uso comercial, tem banda ilimitada e 100 domínios por 
 **Descarta**: Vercel no plano gratuito (uso comercial proibido nos termos) e Render gratuito
 (serviço dorme, 30–60 s para acordar).
 
+## D6 — Material público da empresa na demo, com faixa e `noindex` (2026-09-27)
+
+A demo usa o que a própria empresa publica: nome, endereço, telefone divulgado, horário, slogan,
+cores do letreiro e fotos de fachada/produto. É o que faz o dono se reconhecer na página. A
+contrapartida é explícita: faixa de demonstração, `noindex`, nenhum dado inventado e remoção
+imediata se o dono pedir.
+
+**Descarta**: banco de imagens, dado inventado para "completar" a página, e publicar arte antiga da
+empresa quando o dado já mudou (ex.: cartão do Kareca com o telefone antigo).
+
+## D7 — Status por demo: `modelo`, `pendente`, `pronta` (2026-09-27)
+
+O que falta é visível no próprio repositório. `pendente` significa "demo feita, com pontos marcados
+com `TROCAR:` esperando confirmação do dono"; `pronta` significa que não sobrou nenhuma marcação — e
+o verificador reprova se um status `pronta` ainda tiver `TROCAR:`.
+
+**Descarta**: marcar como pronto o que ainda depende de resposta do dono.
+
 ## D5 — Modelo único com marcações de troca, em vez de gerador de página (2026-09-27)
 
 Um modelo com comentários `TROCAR:` é mais rápido de auditar do que um gerador: o resultado é HTML

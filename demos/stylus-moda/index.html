@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stylus Moda — 4 lojas de moda feminina e masculina na Cidade Salvador, Jacareí</title>
+<meta name="description" content="Stylus Moda: roupas femininas e masculinas, calçados e descontos todos os dias. Quatro lojas na Cidade Salvador, Jacareí, com endereço, horário e WhatsApp por loja.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="../../assets/base.css">
+<link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+<div class="demo-banner">Demonstração feita para <strong>Stylus Moda</strong> — não é o site oficial da loja.</div>
+<div class="faixa">descontos incríveis todos os dias · cidade salvador e região</div>
+
+<header class="topo-site">
+  <div class="wrap">
+    <a class="marca" href="#">Stylus Moda</a>
+    <nav aria-label="Seções">
+      <a href="#lojas">Lojas</a>
+      <a href="#catalogo">O que tem</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="label">moda feminina e masculina · jacareí, sp</p>
+        <h1>Stylus<br>Moda</h1>
+        <!-- slogan do letreiro da própria loja -->
+        <p class="lead">"Aqui você está sempre na moda." Quatro lojas na Cidade Salvador com feminino, masculino, calçados e preço que acompanha o dia a dia do bairro.</p>
+        <p class="acoes">
+          <a class="btn" href="#lojas">Ver as lojas</a>
+          <!-- telefone publicado no site atual da marca -->
+          <a class="btn btn--ghost" href="https://wa.me/5512981370858?text=Ol%C3%A1%2C%20vi%20a%20p%C3%A1gina%20da%20Stylus%20Moda%20e%20quero%20ver%20as%20pe%C3%A7as">Falar no WhatsApp</a>
+        </p>
+        <p class="small muted">Rua Santo Ivo, 245 e 428 · Rua Cachoeira Paulista, 469 · Av. Migrantes, 133</p>
+      </div>
+      <figure style="margin:0">
+        <img src="./img/loja-stylus.jpg" alt="Fachada da Stylus Moda, com o letreiro 'Aqui você está sempre na moda'" loading="eager">
+      </figure>
+    </div>
+  </section>
+
+  <!-- SELETOR DE UNIDADE: um site só, quatro lojas -->
+  <nav class="seletor" id="lojas" aria-label="Escolher a loja">
+    <div class="wrap">
+      <span class="aviso-js" data-aviso-js>Escolha a loja:</span>
+      <button type="button" data-loja="todas" aria-pressed="true">Todas as lojas</button>
+      <button type="button" data-loja="loja-1" hidden>Loja 1 · Santo Ivo 245</button>
+      <button type="button" data-loja="loja-2" hidden>Loja 2 · Stylus Mais Você</button>
+      <button type="button" data-loja="loja-3" hidden>Mega Feirão · Cachoeira Paulista</button>
+      <button type="button" data-loja="loja-4" hidden>Mega Feirão · Parque Meia Lua</button>
+    </div>
+  </nav>
+
+  <article class="loja wrap" id="loja-1">
+    <div class="loja-grid">
+      <div>
+        <p class="label">loja 1 · cidade salvador</p>
+        <h2>Stylus Moda — Santo Ivo, 245</h2>
+        <p class="endereco">Rua Santo Ivo, 245 — Cidade Salvador, Jacareí/SP</p>
+        <ul class="dados">
+          <li><span class="rot">tem</span><span>feminino, masculino e calçados</span></li>
+          <li><span class="rot">horário</span><span><!-- TROCAR: horário real desta loja -->atende de segunda a sábado — confirme pelo WhatsApp</span></li>
+          <!-- TROCAR: confirmar se cada loja tem um número próprio. Por ora, o número divulgado pela marca. -->
+          <li><span class="rot">whatsapp</span><span><a href="https://wa.me/5512981370858?text=Ol%C3%A1%2C%20quero%20ver%20as%20pe%C3%A7as%20da%20loja%20da%20Santo%20Ivo%2C%20245">(12) 98137-0858</a></span></li>
+          <li><span class="rot">mapa</span><span><a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Santo+Ivo,245,Jacare%C3%AD+SP">Abrir rota</a></span></li>
+        </ul>
+        <p class="acoes"><a class="btn" href="https://wa.me/5512981370858?text=Ol%C3%A1%2C%20quero%20ver%20as%20pe%C3%A7as%20da%20loja%20da%20Santo%20Ivo%2C%20245">Falar com esta loja</a></p>
+      </div>
+      <figure style="margin:0"><img src="./img/araras.jpg" alt="Araras com camisetas e blusas na loja" loading="lazy"></figure>
+    </div>
+  </article>
+
+  <article class="loja wrap" id="loja-2">
+    <div class="loja-grid">
+      <div>
+        <p class="label">loja 2 · cidade salvador</p>
+        <h2>Stylus Mais Você — Santo Ivo, 428</h2>
+        <p class="endereco">Rua Santo Ivo, 428 — Cidade Salvador, Jacareí/SP</p>
+        <ul class="dados">
+          <li><span class="rot">tem</span><span>moda feminina e masculina, do dia a dia ao look de festa</span></li>
+          <li><span class="rot">horário</span><span><!-- TROCAR: horário real -->atende de segunda a sábado — confirme pelo WhatsApp</span></li>
+          <li><span class="rot">whatsapp</span><span><a href="https://wa.me/5512981370858?text=Ol%C3%A1%2C%20quero%20ver%20as%20pe%C3%A7as%20da%20Stylus%20Mais%20Voc%C3%AA">(12) 98137-0858</a></span></li>
+          <li><span class="rot">mapa</span><span><a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Santo+Ivo,428,Jacare%C3%AD+SP">Abrir rota</a></span></li>
+        </ul>
+        <p class="acoes"><a class="btn" href="https://wa.me/5512981370858?text=Ol%C3%A1%2C%20quero%20ver%20as%20pe%C3%A7as%20da%20Stylus%20Mais%20Voc%C3%AA">Falar com esta loja</a></p>
+      </div>
+      <figure style="margin:0"><img src="./img/calcados.jpg" alt="Parede de calçados da loja" loading="lazy"></figure>
+    </div>
+  </article>
+
+  <article class="loja wrap" id="loja-3">
+    <div class="loja-grid">
+      <div>
+        <p class="label">mega feirão · cidade salvador</p>
+        <h2>Mega Feirão Stylus Moda — Cachoeira Paulista, 469</h2>
+        <p class="endereco">Rua Cachoeira Paulista, 469 — Cidade Salvador, Jacareí/SP</p>
+        <ul class="dados">
+          <li><span class="rot">tem</span><span>masculino, feminino, adulto e infantil — loja de feirão, volume grande de peças</span></li>
+          <li><span class="rot">horário</span><span><!-- TROCAR: horário real -->atende de segunda a sábado — confirme pelo WhatsApp</span></li>
+          <li><span class="rot">whatsapp</span><span><a href="https://wa.me/5512981370858?text=Ol%C3%A1%2C%20quero%20ver%20as%20pe%C3%A7as%20do%20Mega%20Feir%C3%A3o%20da%20Cachoeira%20Paulista">(12) 98137-0858</a></span></li>
+          <li><span class="rot">mapa</span><span><a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Cachoeira+Paulista,469,Jacare%C3%AD+SP">Abrir rota</a></span></li>
+        </ul>
+        <!-- valor que está escrito na fachada da própria loja -->
+        <div class="destaque-loja">
+          <p class="label" style="margin-bottom:.3rem">como está na fachada</p>
+          <p class="forte">a partir de R$ 4,99</p>
+          <p style="margin:.3rem 0 0">masculino, feminino, adulto e infantil</p>
+        </div>
+        <p class="acoes"><a class="btn" href="https://wa.me/5512981370858?text=Ol%C3%A1%2C%20quero%20ver%20as%20pe%C3%A7as%20do%20Mega%20Feir%C3%A3o%20da%20Cachoeira%20Paulista">Falar com esta loja</a></p>
+      </div>
+      <figure style="margin:0"><img src="./img/loja-mega-feirao.jpg" alt="Fachada do Mega Feirão Stylus Moda, com faixas de preço a partir de R$ 4,99" loading="lazy"></figure>
+    </div>
+  </article>
+
+  <article class="loja wrap" id="loja-4">
+    <div class="loja-grid">
+      <div>
+        <p class="label">mega feirão · parque meia lua</p>
+        <h2>Mega Feirão Stylus Moda — Av. Migrantes, 133</h2>
+        <p class="endereco">Av. Migrantes, 133 — Parque Meia Lua, Jacareí/SP</p>
+        <ul class="dados">
+          <li><span class="rot">tem</span><span>masculino, feminino, adulto e infantil</span></li>
+          <li><span class="rot">horário</span><span><!-- TROCAR: horário real -->atende de segunda a sábado — confirme pelo WhatsApp</span></li>
+          <li><span class="rot">whatsapp</span><span><a href="https://wa.me/5512981370858?text=Ol%C3%A1%2C%20quero%20ver%20as%20pe%C3%A7as%20do%20Mega%20Feir%C3%A3o%20do%20Parque%20Meia%20Lua">(12) 98137-0858</a></span></li>
+          <li><span class="rot">mapa</span><span><a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Migrantes,133,Parque+Meia+Lua,Jacare%C3%AD+SP">Abrir rota</a></span></li>
+        </ul>
+        <p class="acoes"><a class="btn" href="https://wa.me/5512981370858?text=Ol%C3%A1%2C%20quero%20ver%20as%20pe%C3%A7as%20do%20Mega%20Feir%C3%A3o%20do%20Parque%20Meia%20Lua">Falar com esta loja</a></p>
+      </div>
+      <!-- esta unidade não tem foto pública: preferimos não colocar imagem de banco de imagens -->
+      <div></div>
+    </div>
+  </article>
+
+  <section class="section wrap">
+    <p class="label">o que tem nas lojas</p>
+    <h2>Catálogo</h2>
+    <ul class="catalogo">
+      <li>
+        <figure style="margin:0 0 .75rem"><img src="./img/araras.jpg" alt="Camisetas e blusas em araras" loading="lazy"></figure>
+        <h3>Feminino</h3>
+        <p>Blusas, vestidos, croppeds e peças do dia a dia. Reposição de tamanhos toda semana.</p>
+      </li>
+      <li>
+        <figure style="margin:0 0 .75rem"><img src="./img/loja-stylus.jpg" alt="Interior da loja com peças masculinas e femininas" loading="lazy"></figure>
+        <h3>Masculino</h3>
+        <p>Camiseta, camisa, bermuda e calça — roupa confortável para trabalho e fim de semana.</p>
+      </li>
+      <li>
+        <figure style="margin:0 0 .75rem"><img src="./img/calcados.jpg" alt="Calçados em prateleira" loading="lazy"></figure>
+        <h3>Calçados</h3>
+        <p>Tênis, sapato e sandália para completar o visual — feminino, masculino e infantil.</p>
+      </li>
+    </ul>
+    <!-- TROCAR: incluir aqui as fotos novas que a loja mandar (uma por categoria), com preço quando ela autorizar. -->
+  </section>
+
+  <section class="section wrap" id="contato">
+    <p class="label">contato</p>
+    <h2>Falar com a Stylus</h2>
+    <p>WhatsApp: <a href="https://wa.me/5512981370858">(12) 98137-0858</a> · Instagram: <a href="https://www.instagram.com/stylus_modas/">@stylus_modas</a></p>
+    <p class="small muted">Também tem loja em Guaratinguetá: Av. Agenor Pires da Fonseca, 178 — Jardim do Vale.</p>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <p><strong>Stylus Moda</strong> — quatro lojas na Cidade Salvador (Jacareí/SP) e uma em Guaratinguetá.</p>
+    <p class="small">Página de demonstração, feita para apresentar uma proposta. Fotos, slogan e endereços são material público da loja; horários, números por loja e preços entram quando a loja confirmar.</p>
+  </div>
+</footer>
+
+<script src="./lojas.js" defer></script>
+</body>
+</html>

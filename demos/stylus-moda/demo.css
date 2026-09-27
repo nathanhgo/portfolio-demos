@@ -1,0 +1,68 @@
+/* Stylus Moda — vermelho do letreiro do Mega Feirão + preto da fachada da Stylus.
+   Base compartilhada em ../../assets/base.css */
+
+:root {
+  --paper: #f8f7f4;
+  --paper-2: #efede7;
+  --ink: #141414;
+  --ink-soft: #5a5751;
+  --rule: #ddd9d0;
+  --accent: #c0261f;
+  --accent-ink: #ffffff;
+  --font-title: "Barlow Condensed", "Archivo Narrow", Impact, sans-serif;
+  --radius: 2px;
+}
+
+h1, h2 { text-transform: uppercase; letter-spacing: .01em; }
+h1 { font-size: clamp(2.5rem, 12vw, 4.75rem); line-height: .92; }
+
+.faixa { background: var(--accent); color: #fff; padding: .55rem 1.25rem; text-align: center;
+  font-family: var(--font-mono); font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; }
+
+.topo-site { border-bottom: 1px solid var(--rule); }
+.topo-site .wrap { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .35rem 1rem; padding-top: .9rem; padding-bottom: .9rem; }
+.marca { font-family: var(--font-title); font-size: clamp(1.2rem, 5vw, 1.5rem); font-weight: 700;
+  text-transform: uppercase; text-decoration: none; color: var(--ink); letter-spacing: .02em; white-space: nowrap; }
+.topo-site nav { display: flex; flex-wrap: wrap; gap: .5rem 1rem; font-family: var(--font-mono); font-size: .78rem; }
+.topo-site nav a { text-decoration: none; color: var(--ink-soft); white-space: nowrap; }
+
+.hero { padding: clamp(2rem,6vw,3.5rem) 0 0; }
+.hero-grid { display: grid; gap: 1.5rem; }
+@media (min-width: 48rem) { .hero-grid { grid-template-columns: 1.1fr .9fr; align-items: center; } }
+.hero img { border: 1px solid var(--rule); }
+
+/* seletor de unidade — o que o site atual não tem */
+.seletor { position: sticky; top: 0; z-index: 3; background: var(--paper); border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule); }
+/* celular: uma linha só, rolando de lado (barra fixa alta come a tela). desktop: quebra linha e mostra todas. */
+.seletor .wrap { display: flex; gap: .5rem; overflow-x: auto; padding-top: .6rem; padding-bottom: .6rem;
+  scrollbar-width: none; -ms-overflow-style: none; }
+.seletor .wrap::-webkit-scrollbar { display: none; }
+.seletor .aviso-js { white-space: nowrap; }
+@media (min-width: 40rem) { .seletor .wrap { flex-wrap: wrap; overflow: visible; } }
+.seletor button {
+  flex: 0 0 auto; min-height: 2.5rem; padding: .45rem .9rem; font: inherit; font-size: .875rem; font-weight: 600;
+  background: transparent; color: var(--ink); border: 1px solid var(--rule); border-radius: var(--radius); cursor: pointer;
+}
+.seletor button[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+.seletor .aviso-js { font-size: .8rem; color: var(--ink-soft); align-self: center; }
+
+.loja { padding: var(--sec) 0; border-top: 1px solid var(--rule); }
+.loja[hidden] { display: none; }
+.loja-grid { display: grid; gap: 1.5rem; }
+@media (min-width: 48rem) { .loja-grid { grid-template-columns: 1fr .85fr; align-items: start; } }
+.loja img { border: 1px solid var(--rule); }
+.loja .endereco { font-size: 1.05rem; }
+.dados { list-style: none; margin: 1rem 0 0; padding: 0; }
+.dados li { padding: .55rem 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 7rem 1fr; gap: .75rem; }
+.dados .rot { font-family: var(--font-mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); padding-top: .15rem; }
+.destaque-loja { background: var(--paper-2); border: 1px solid var(--rule); padding: .9rem 1.1rem; margin-top: 1.25rem; }
+.destaque-loja .forte { font-family: var(--font-title); font-size: 1.9rem; line-height: 1; color: var(--accent); }
+
+.catalogo { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.75rem; }
+@media (min-width: 40rem) { .catalogo { grid-template-columns: repeat(3, 1fr); } }
+.catalogo h3 { text-transform: uppercase; }
+.catalogo p { font-size: .95rem; color: var(--ink-soft); }
+
+.acoes { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+.btn--zap { background: #1f8f4e; border-color: #1f8f4e; }

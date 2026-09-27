@@ -1,6 +1,6 @@
 {
   "atualizado": "2026-09-27",
-  "nota": "Registro único das demonstrações. Edite aqui e rode `node scripts/build-home.mjs`.",
+  "nota": "Status: modelo (referência interna) · pendente (demo feita, faltam confirmações do dono, marcadas com TROCAR no HTML) · pronta (nada pendente).",
   "demos": [
     {
       "slug": "_template",
@@ -10,6 +10,33 @@
       "status": "modelo",
       "link": "./demos/_template/",
       "observacao": "Dados fictícios. Copie esta pasta para criar uma demo nova."
+    },
+    {
+      "slug": "kareca-pneus",
+      "nome": "Kareca Pneus",
+      "segmento": "oficina · pneus, alinhamento e suspensão",
+      "bairro": "Jardim das Indústrias",
+      "status": "pendente",
+      "link": "./demos/kareca-pneus/",
+      "observacao": "Confirmar WhatsApp da oficina (3951-3729 é fixo) e formas de pagamento. A arte da marca com o telefone antigo (3953-4316) foi descartada de propósito."
+    },
+    {
+      "slug": "comercial-cobra",
+      "nome": "Comercial Cobra",
+      "segmento": "material de construção",
+      "bairro": "Jardim Paraíso",
+      "status": "pendente",
+      "link": "./demos/comercial-cobra/",
+      "observacao": "Sem foto pública: página tipográfica. Confirmar horário, linhas de produto e se faz entrega. Telefone pode ser linha compartilhada."
+    },
+    {
+      "slug": "stylus-moda",
+      "nome": "Stylus Moda (4 lojas)",
+      "segmento": "moda feminina e masculina",
+      "bairro": "Cidade Salvador",
+      "status": "pendente",
+      "link": "./demos/stylus-moda/",
+      "observacao": "Site único com troca de unidade (o atual só lista endereços). Confirmar horário por loja e se cada loja tem WhatsApp próprio."
     }
   ]
 }

@@ -1,0 +1,35 @@
+/* Comercial Cobra — sem material visual público e sem cor de marca conhecida.
+   Por isso: paleta neutra dos tokens base, sem inventar identidade (architecture_docs/visual.md 2.2).
+   A página se sustenta na tipografia e na informação. */
+
+:root {
+  --paper: #f2f0ea;
+  --paper-2: #e6e2d8;
+  --ink: #16150f;
+  --ink-soft: #57544a;
+  --rule: #d3cec0;
+  --accent: #1e4d45;
+  --font-title: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --radius: 2px;
+}
+
+h1 { font-size: clamp(2.2rem, 8vw, 3.6rem); letter-spacing: -.02em; }
+h2 { letter-spacing: -.01em; }
+
+.anos { font-family: var(--font-title); font-size: clamp(3.4rem, 15vw, 6rem); line-height: .9;
+  font-weight: 700; letter-spacing: -.03em; color: var(--accent); margin: 0; }
+
+.categorias { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.categorias li { display: grid; grid-template-columns: auto 1fr; gap: .5rem 1rem; padding: 1rem 0;
+  border-bottom: 1px solid var(--rule); align-items: baseline; }
+.categorias .num { font-family: var(--font-mono); font-size: .8rem; color: var(--ink-soft); }
+.categorias .item-nome { font-weight: 600; }
+.categorias .item-desc { grid-column: 2; font-size: .95rem; color: var(--ink-soft); margin: 0; }
+
+.passos { counter-reset: p; list-style: none; margin: 0; padding: 0; }
+.passos li { counter-increment: p; padding: .85rem 0 .85rem 2.4rem; position: relative; border-bottom: 1px solid var(--rule); }
+.passos li::before { content: counter(p); position: absolute; left: 0; top: .8rem;
+  font-family: var(--font-mono); font-size: .85rem; color: var(--accent); border: 1px solid var(--accent);
+  width: 1.5rem; height: 1.5rem; display: grid; place-items: center; border-radius: 50%; }
+
+.acoes { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
